@@ -1,0 +1,26 @@
+name: slick-live
+version: '0.1.0.0'
+category: Web
+author: Sergey Bushnyak
+maintainer: sergey.bushnyak@sigrlami.eu
+copyright: ! 'Copyright: (c) 2019 Sergey Bushnyak'
+license: MIT
+github: sigrlami/slick-live
+
+extra-source-files:
+- README.md
+
+dependencies:
+- base >=4.7 && <5
+- text
+- http-types
+- websockets
+- wai
+- warp
+- wai-app-static
+- wai-websockets >= 3.0.1
+
+library:
+  source-dirs: src
+  exposed-modules:
+  - Slick.Serve
